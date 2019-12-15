@@ -11,12 +11,12 @@ using System.Data.SqlClient;
 
 namespace SinavSis
 {
-    public partial class Form1 : DevExpress.XtraEditors.XtraForm
+    public partial class AnaMenu : DevExpress.XtraEditors.XtraForm
     {
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-C9KDPNN;Initial Catalog=Sinav;Integrated Security=True");
+        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-J148P14;Initial Catalog=Sinav;Integrated Security=True");
 
 
-        public Form1()
+        public AnaMenu()
         {
             InitializeComponent();
         }
@@ -27,11 +27,7 @@ namespace SinavSis
             Application.Exit();
         }
 
-        private void simpleButton3_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Application.Exit();
-        }
+        
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
@@ -48,7 +44,7 @@ namespace SinavSis
                 if(dr.HasRows)
                 {
                     labelControl3.Visible = false;
-                    Form2 f2 = new Form2();
+                    OgrenciForm f2 = new OgrenciForm();
                     f2.Show();
                     this.Hide();
                 }
@@ -84,7 +80,7 @@ namespace SinavSis
                 if (dr.HasRows)
                 {
                     labelControl5.Visible = false;
-                    Form2 f2 = new Form2();
+                    OgretmenForm f2 = new OgretmenForm();
                     f2.Show();
                     this.Hide();
                 }
@@ -132,6 +128,17 @@ namespace SinavSis
         private void labelControl3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
         }
     }
     }
