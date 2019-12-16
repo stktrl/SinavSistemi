@@ -37,7 +37,6 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -47,6 +46,9 @@
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -76,28 +78,29 @@
             // 
             // panelControl1
             // 
-            this.panelControl1.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.panelControl1.Appearance.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panelControl1.Appearance.Options.UseBackColor = true;
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl1.Controls.Add(this.labelControl9);
-            this.panelControl1.Controls.Add(this.labelControl3);
+            this.panelControl1.Controls.Add(this.labelControl5);
             this.panelControl1.Controls.Add(this.simpleButton1);
+            this.panelControl1.Controls.Add(this.labelControl8);
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Controls.Add(this.labelControl2);
             this.panelControl1.Controls.Add(this.textEdit2);
             this.panelControl1.Controls.Add(this.textEdit1);
-            this.panelControl1.Location = new System.Drawing.Point(25, 90);
+            this.panelControl1.Location = new System.Drawing.Point(159, 63);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(339, 232);
+            this.panelControl1.Size = new System.Drawing.Size(373, 257);
             this.panelControl1.TabIndex = 2;
+            this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
             // 
             // labelControl9
             // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(93, 3);
+            this.labelControl9.Location = new System.Drawing.Point(80, 18);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(186, 37);
+            this.labelControl9.Size = new System.Drawing.Size(223, 38);
             this.labelControl9.TabIndex = 9;
             this.labelControl9.Text = "Öğrenci Girişi";
             // 
@@ -107,7 +110,7 @@
             this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.WindowText;
             this.labelControl3.Appearance.Options.UseBackColor = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(134, 137);
+            this.labelControl3.Location = new System.Drawing.Point(131, 137);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(145, 13);
             this.labelControl3.TabIndex = 7;
@@ -117,7 +120,7 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(134, 170);
+            this.simpleButton1.Location = new System.Drawing.Point(134, 165);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(145, 29);
             this.simpleButton1.TabIndex = 5;
@@ -140,40 +143,31 @@
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "Kullanıcı Adı:";
             // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(159, 30);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(388, 29);
-            this.labelControl4.TabIndex = 3;
-            this.labelControl4.Text = "Team Forza Öğretmen Sınav Sistemi";
-            // 
             // panelControl2
             // 
-            this.panelControl2.Appearance.BackColor = System.Drawing.Color.IndianRed;
+            this.panelControl2.Appearance.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panelControl2.Appearance.Options.UseBackColor = true;
             this.panelControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl2.Controls.Add(this.labelControl8);
-            this.panelControl2.Controls.Add(this.labelControl5);
+            this.panelControl2.Controls.Add(this.labelControl3);
+            this.panelControl2.Controls.Add(this.labelControl9);
             this.panelControl2.Controls.Add(this.simpleButton5);
             this.panelControl2.Controls.Add(this.labelControl6);
             this.panelControl2.Controls.Add(this.labelControl7);
             this.panelControl2.Controls.Add(this.textEdit3);
             this.panelControl2.Controls.Add(this.textEdit4);
-            this.panelControl2.Location = new System.Drawing.Point(370, 90);
+            this.panelControl2.Location = new System.Drawing.Point(162, 63);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(339, 232);
+            this.panelControl2.Size = new System.Drawing.Size(378, 257);
             this.panelControl2.TabIndex = 5;
+            this.panelControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl2_Paint);
             // 
             // labelControl8
             // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(83, 3);
+            this.labelControl8.Location = new System.Drawing.Point(59, 18);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(209, 37);
+            this.labelControl8.Size = new System.Drawing.Size(256, 38);
             this.labelControl8.TabIndex = 8;
             this.labelControl8.Text = "Öğretmen Girişi";
             // 
@@ -183,7 +177,7 @@
             this.labelControl5.Appearance.ForeColor = System.Drawing.SystemColors.WindowText;
             this.labelControl5.Appearance.Options.UseBackColor = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(134, 137);
+            this.labelControl5.Location = new System.Drawing.Point(134, 143);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(145, 13);
             this.labelControl5.TabIndex = 7;
@@ -192,9 +186,9 @@
             // 
             // simpleButton5
             // 
-            this.simpleButton5.Location = new System.Drawing.Point(123, 170);
+            this.simpleButton5.Location = new System.Drawing.Point(134, 165);
             this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(161, 29);
+            this.simpleButton5.Size = new System.Drawing.Size(145, 29);
             this.simpleButton5.TabIndex = 5;
             this.simpleButton5.Text = "Giriş Yap";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
@@ -236,24 +230,66 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(699, 1);
+            this.button1.Location = new System.Drawing.Point(622, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(38, 31);
+            this.button1.Size = new System.Drawing.Size(56, 44);
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.Location = new System.Drawing.Point(3, 344);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(337, 58);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Öğrenci Girişi";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(346, 344);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(332, 58);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Öğretmen Girişi";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl10.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Appearance.Options.UseForeColor = true;
+            this.labelControl10.Location = new System.Drawing.Point(284, 22);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(121, 25);
+            this.labelControl10.TabIndex = 9;
+            this.labelControl10.Text = "TeamForza";
+            // 
             // AnaMenu
             // 
-            this.Appearance.BackColor = System.Drawing.Color.Teal;
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 408);
+            this.ClientSize = new System.Drawing.Size(681, 405);
             this.ControlBox = false;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.labelControl10);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.panelControl2);
-            this.Controls.Add(this.labelControl4);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panelControl1);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -286,7 +322,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl6;
@@ -297,6 +332,9 @@
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
     }
 }
 
