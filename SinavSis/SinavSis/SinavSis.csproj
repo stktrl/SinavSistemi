@@ -86,26 +86,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SinavDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SinavDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="SinavDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SinavDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="SinavDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SinavDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="SinavDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SinavDataSet3.xsd</DependentUpon>
-    </Compile>
     <Compile Include="SoruEkle.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,50 +124,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="SinavDataSet.xsc">
-      <DependentUpon>SinavDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="SinavDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SinavDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SinavDataSet.xss">
-      <DependentUpon>SinavDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="SinavDataSet1.xsc">
-      <DependentUpon>SinavDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="SinavDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SinavDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SinavDataSet1.xss">
-      <DependentUpon>SinavDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="SinavDataSet2.xsc">
-      <DependentUpon>SinavDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="SinavDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SinavDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SinavDataSet2.xss">
-      <DependentUpon>SinavDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="SinavDataSet3.xsc">
-      <DependentUpon>SinavDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="SinavDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SinavDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SinavDataSet3.xss">
-      <DependentUpon>SinavDataSet3.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
