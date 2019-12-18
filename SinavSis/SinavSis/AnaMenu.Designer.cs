@@ -33,11 +33,11 @@
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.label2 = new System.Windows.Forms.Label();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.label1 = new System.Windows.Forms.Label();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
@@ -92,7 +92,7 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(373, 257);
             this.panelControl1.TabIndex = 2;
-            this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
+           
             // 
             // label2
             // 
@@ -104,18 +104,19 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Öğrenci";
             // 
-            // labelControl5
+            // labelControl3
             // 
-            this.labelControl5.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl5.Appearance.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelControl5.Appearance.Options.UseBackColor = true;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(134, 137);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(145, 13);
-            this.labelControl5.TabIndex = 7;
-            this.labelControl5.Text = "Kullanıcı Adı veya Şifre Hatalı!!";
-            this.labelControl5.Visible = false;
+            this.labelControl3.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelControl3.Appearance.Options.UseBackColor = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(134, 137);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(145, 13);
+            this.labelControl3.TabIndex = 7;
+            this.labelControl3.Text = "Kullanıcı Adı veya Şifre Hatalı!!";
+            this.labelControl3.Visible = false;
+            this.labelControl3.Click += new System.EventHandler(this.labelControl3_Click);
             // 
             // simpleButton1
             // 
@@ -142,19 +143,18 @@
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "Kullanıcı Adı:";
             // 
-            // labelControl3
+            // labelControl5
             // 
-            this.labelControl3.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelControl3.Appearance.Options.UseBackColor = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(134, 137);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(145, 13);
-            this.labelControl3.TabIndex = 7;
-            this.labelControl3.Text = "Kullanıcı Adı veya Şifre Hatalı!!";
-            this.labelControl3.Visible = false;
-            this.labelControl3.Click += new System.EventHandler(this.labelControl3_Click);
+            this.labelControl5.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl5.Appearance.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.labelControl5.Appearance.Options.UseBackColor = true;
+            this.labelControl5.Appearance.Options.UseForeColor = true;
+            this.labelControl5.Location = new System.Drawing.Point(134, 137);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(145, 13);
+            this.labelControl5.TabIndex = 7;
+            this.labelControl5.Text = "Kullanıcı Adı veya Şifre Hatalı!!";
+            this.labelControl5.Visible = false;
             // 
             // panelControl2
             // 
@@ -172,7 +172,7 @@
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(378, 256);
             this.panelControl2.TabIndex = 5;
-            this.panelControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl2_Paint);
+            
             // 
             // label1
             // 
@@ -262,6 +262,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "Öğretmen Girişi";
             this.button3.UseVisualStyleBackColor = true;
+            
             // 
             // labelControl10
             // 

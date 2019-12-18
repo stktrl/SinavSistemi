@@ -141,18 +141,7 @@ namespace SinavSis
             Application.Exit();
         }
 
-        private void panelControl1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
      
-        
-
-        private void panelControl2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
     }
 
