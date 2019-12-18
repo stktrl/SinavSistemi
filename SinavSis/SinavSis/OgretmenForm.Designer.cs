@@ -39,6 +39,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.soruEkle1 = new SinavSis.SoruEkle();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             this.panel2.SuspendLayout();
@@ -56,7 +57,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(183, 431);
+            this.panel1.Size = new System.Drawing.Size(183, 420);
             this.panel1.TabIndex = 1;
             // 
             // buton3
@@ -151,7 +152,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(183, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(850, 42);
+            this.panel2.Size = new System.Drawing.Size(726, 42);
             this.panel2.TabIndex = 2;
             // 
             // button4
@@ -159,7 +160,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(806, -4);
+            this.button4.Location = new System.Drawing.Point(679, -4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(44, 46);
             this.button4.TabIndex = 1;
@@ -178,11 +179,19 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Öğretmen Ekranı";
             // 
+            // soruEkle1
+            // 
+            this.soruEkle1.Location = new System.Drawing.Point(183, 42);
+            this.soruEkle1.Name = "soruEkle1";
+            this.soruEkle1.Size = new System.Drawing.Size(731, 488);
+            this.soruEkle1.TabIndex = 3;
+            // 
             // OgretmenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 431);
+            this.ClientSize = new System.Drawing.Size(909, 420);
+            this.Controls.Add(this.soruEkle1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -211,5 +220,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button4;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private SoruEkle soruEkle1;
     }
 }

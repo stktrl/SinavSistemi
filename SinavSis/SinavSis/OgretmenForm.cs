@@ -19,7 +19,7 @@ namespace SinavSis
 
         private void OgretmenForm_Load(object sender, EventArgs e)
         {
-            
+            soruEkle1.Visible = false;
         }
 
         private void buton3_Click(object sender, EventArgs e)
@@ -33,12 +33,14 @@ namespace SinavSis
         {
             SidePanel.Height = buton2.Height;
             SidePanel.Top = buton2.Top;
+            soruEkle1.Visible = true;
         }
 
         private void buton1_Click(object sender, EventArgs e)
         {
             SidePanel.Height = buton1.Height;
             SidePanel.Top = buton1.Top;
+            soruEkle1.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)

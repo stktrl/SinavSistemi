@@ -149,3 +149,10 @@ C:\Users\ataak\OneDrive\Masaüstü\SinavSistemi\SinavSistemi\SinavSis\SinavSis\o
 C:\Users\ataak\OneDrive\Masaüstü\SinavSistemi\SinavSistemi\SinavSis\SinavSis\obj\Debug\SinavSis.AnaMenu.resources
 C:\Users\ataak\OneDrive\Masaüstü\SinavSistemi\SinavSistemi\SinavSis\SinavSis\obj\Debug\SinavSis.OgrenciForm.resources
 C:\Users\ataak\OneDrive\Masaüstü\SinavSistemi\SinavSistemi\SinavSis\SinavSis\obj\Debug\SinavSis.OgretmenForm.resources
+C:\Users\ataak\OneDrive\Masaüstü\SinavSistemi\SinavSistemi\SinavSis\SinavSis\bin\Debug\DevExpress.XtraBars.v19.2.dll
+C:\Users\ataak\OneDrive\Masaüstü\SinavSistemi\SinavSistemi\SinavSis\SinavSis\bin\Debug\DevExpress.XtraBars.v19.2.xml
+C:\Users\ataak\OneDrive\Masaüstü\SinavSistemi\SinavSistemi\SinavSis\SinavSis\bin\Debug\de\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\ataak\OneDrive\Masaüstü\SinavSistemi\SinavSistemi\SinavSis\SinavSis\bin\Debug\es\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\ataak\OneDrive\Masaüstü\SinavSistemi\SinavSistemi\SinavSis\SinavSis\bin\Debug\ja\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\ataak\OneDrive\Masaüstü\SinavSistemi\SinavSistemi\SinavSis\SinavSis\bin\Debug\ru\DevExpress.XtraBars.v19.2.resources.dll
+C:\Users\ataak\OneDrive\Masaüstü\SinavSistemi\SinavSistemi\SinavSis\SinavSis\obj\Debug\SinavSis.SoruEkle.resources

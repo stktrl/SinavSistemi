@@ -51,6 +51,7 @@
     <Reference Include="DevExpress.Data.v19.2" />
     <Reference Include="DevExpress.Utils.v19.2" />
     <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v19.2" />
     <Reference Include="DevExpress.Printing.v19.2.Core" />
     <Reference Include="System" />
@@ -90,6 +91,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SinavDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SinavDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinavDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SinavDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinavDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SinavDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinavDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoruEkle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SoruEkle.Designer.cs">
+      <DependentUpon>SoruEkle.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AnaMenu.resx">
       <DependentUpon>AnaMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +131,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SoruEkle.resx">
+      <DependentUpon>SoruEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -129,6 +154,39 @@
     </None>
     <None Include="SinavDataSet.xss">
       <DependentUpon>SinavDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SinavDataSet1.xsc">
+      <DependentUpon>SinavDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SinavDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinavDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SinavDataSet1.xss">
+      <DependentUpon>SinavDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SinavDataSet2.xsc">
+      <DependentUpon>SinavDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SinavDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinavDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SinavDataSet2.xss">
+      <DependentUpon>SinavDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SinavDataSet3.xsc">
+      <DependentUpon>SinavDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SinavDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinavDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SinavDataSet3.xss">
+      <DependentUpon>SinavDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
