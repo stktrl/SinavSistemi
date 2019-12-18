@@ -66,7 +66,7 @@ namespace SinavSis
             timer1.Start();
 
 
-            string Soru = "", Resim = "", Asık = "", Bsık = "", Csık = "", Dsık = "", Dogrusık = "";
+            string Soruu = "", Resimm = "", Asık = "", Bsık = "", Csık = "", Dsık = "", Dogrusık = "";
             SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-J148P14;Initial Catalog=Sinav;Integrated Security=True");
             baglanti.Open();
             SqlCommand komut = new SqlCommand("Select Soru,Resim,ASıkkı,BSıkkı,CSıkkı,DSıkkı,DogruSık from tbl_Soru order by RAND()", baglanti);
@@ -74,8 +74,8 @@ namespace SinavSis
             while (dr.Read())
             {
                
-                Soru = dr["Soru"].ToString();
-                Resim = dr["Resim"].ToString();
+                Soruu = dr["Soru"].ToString();
+                Resimm = dr["Resim"].ToString();
                 Asık = dr["ASıkkı"].ToString();
                 Bsık = dr["BSıkkı"].ToString();
                 Csık = dr["CSıkkı"].ToString();
@@ -89,7 +89,12 @@ namespace SinavSis
             baglanti.Close();
 
             Sinavform f4 = new Sinavform();
-            f4.label1.Text = Soru;
+            f4.label1.Text = Soruu;
+            f4.radioButton1.Text = Asık;
+            f4.radioButton2.Text = Bsık;
+            f4.radioButton3.Text = Csık;
+            f4.radioButton4.Text = Dsık;
+
 
 
         }

@@ -1,2 +1,2 @@
 # SinavSistemi
-Yazılım test Projesi 
+ Sinav sistemidir

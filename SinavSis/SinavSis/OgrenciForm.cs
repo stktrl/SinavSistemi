@@ -36,18 +36,30 @@ namespace SinavSis
         {
             SidePanel.Height = buton1.Height;
             SidePanel.Top = buton1.Top;
+            label1.Visible = false;
+            button2.Visible = false;
+            
+            
         }
 
         private void buton2_Click(object sender, EventArgs e)
         {
             SidePanel.Height = buton2.Height;
             SidePanel.Top = buton2.Top;
+            label1.Visible = true;
+            button2.Visible = true;
+           
         }
 
         private void buton3_Click(object sender, EventArgs e)
         {
             SidePanel.Height = buton3.Height;
             SidePanel.Top = buton3.Top;
+            label1.Visible = false;
+            button2.Visible = false;
+
+        
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,6 +68,16 @@ namespace SinavSis
             AnaMenu f1 = new AnaMenu();
             this.Hide();
             f1.Show();
+        }
+
+      
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Sinavform f3 = new Sinavform();
+            f3.Show();
+            this.Hide();
+            
         }
     }
 }

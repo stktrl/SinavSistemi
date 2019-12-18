@@ -40,6 +40,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             this.panel2.SuspendLayout();
@@ -198,11 +200,36 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Öğrenci Sınav Ekranı";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(394, 188);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(432, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "TESTE BAŞLAMAK İÇİN BUTONA TIKLAYINIZ.";
+            this.label1.Visible = false;
+           
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(529, 250);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(141, 48);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Teste Başla";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // OgrenciForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 517);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -216,6 +243,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -232,5 +260,7 @@
         private System.Windows.Forms.Button buton3;
         private System.Windows.Forms.Button buton2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }
