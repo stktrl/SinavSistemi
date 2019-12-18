@@ -132,8 +132,7 @@ namespace SinavSis
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            panelControl1.Visible = false;
-            panelControl2.Visible = false;
+         
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -149,14 +148,12 @@ namespace SinavSis
 
         private void button3_Click(object sender, EventArgs e)
         {
-            panelControl2.Visible = false;
-            panelControl1.Visible = true;
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            panelControl1.Visible = false;
-            panelControl2.Visible = true;
+           
 
         }
 
