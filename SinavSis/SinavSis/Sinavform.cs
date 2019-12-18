@@ -29,15 +29,38 @@ namespace SinavSis
         {
             sayac++;
             label3.Text = sayac.ToString();
-            sayactimer += progressBar1.Maximum - progressBar1.Value +1;
-            
+            sayactimer += progressBar1.Maximum - progressBar1.Value + 1;
+
+            if (radioButton1.Checked)
+            {
+                if (radioButton1.Text == Dogrusık.ToString());
+                MessageBox.Show("Doğru");
+            }
+            if (radioButton2.Checked)
+            {
+                if (radioButton2.Text == Dogrusık.ToString()) ;
+                MessageBox.Show("Yanlış");
+            }
+            if (radioButton3.Checked)
+            {
+                if (radioButton3.Text == Dogrusık.ToString()) ;
+                MessageBox.Show("Yanlış");
+            }
+            if (radioButton4.Checked)
+            {
+                if (radioButton4.Text == Dogrusık.ToString()) ;
+                MessageBox.Show("Yanlış");
+            }
+
+
         }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
             sayac++;
             label3.Text = sayac.ToString();
-            sayactimer += progressBar1.Maximum - progressBar1.Value + 1;
+            sayactimer += progressBar1.Maximum - progressBar1.Value ;
         }
         
         int sayactimer = 15;
@@ -48,7 +71,7 @@ namespace SinavSis
                 sayactimer--;
                 progressBar1.Value = sayactimer;
                 label2.Text = progressBar1.Value.ToString();
-
+          
 
                 if (sayactimer == 0)
                 {
@@ -61,26 +84,26 @@ namespace SinavSis
                     timer1.Start();
                 }           
         }
+        string Dogrusık = "";
         private void Sinavform_Load(object sender, EventArgs e)
         {
             timer1.Start();
 
-
-            string Soruu = "", Resimm = "", Asık = "", Bsık = "", Csık = "", Dsık = "", Dogrusık = "";
+            
             SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-J148P14;Initial Catalog=Sinav;Integrated Security=True");
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("Select Soru,Resim,ASıkkı,BSıkkı,CSıkkı,DSıkkı,DogruSık from tbl_Soru order by RAND()", baglanti);
+            SqlCommand komut = new SqlCommand("Select TOP 5 Soru,ASıkkı,BSıkkı,CSıkkı,DSıkkı,DogruCevap from tbl_Soru order by newid()", baglanti);
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
             {
                
-                Soruu = dr["Soru"].ToString();
-                Resimm = dr["Resim"].ToString();
-                Asık = dr["ASıkkı"].ToString();
-                Bsık = dr["BSıkkı"].ToString();
-                Csık = dr["CSıkkı"].ToString();
-                Dsık = dr["DSıkkı"].ToString();
-                Dogrusık = dr["DogruSık"].ToString();
+                label1.Text = dr["Soru"].ToString();
+               
+                radioButton1.Text = dr["ASıkkı"].ToString();
+                radioButton2.Text = dr["BSıkkı"].ToString();
+                radioButton3.Text = dr["CSıkkı"].ToString();
+                radioButton4.Text = dr["DSıkkı"].ToString();
+                Dogrusık = dr["DogruCevap"].ToString();
 
 
             }
@@ -88,15 +111,13 @@ namespace SinavSis
             komut.Dispose();
             baglanti.Close();
 
-            Sinavform f4 = new Sinavform();
-            f4.label1.Text = Soruu;
-            f4.radioButton1.Text = Asık;
-            f4.radioButton2.Text = Bsık;
-            f4.radioButton3.Text = Csık;
-            f4.radioButton4.Text = Dsık;
+            
+        
 
 
 
         }
+
+       
     }
 }

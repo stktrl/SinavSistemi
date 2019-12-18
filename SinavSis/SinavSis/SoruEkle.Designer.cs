@@ -55,6 +55,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.ComboBoxDogru = new System.Windows.Forms.ComboBox();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -282,7 +283,7 @@
             "B",
             "C",
             "D"});
-            this.ComboBoxDogru.Location = new System.Drawing.Point(415, 262);
+            this.ComboBoxDogru.Location = new System.Drawing.Point(490, 327);
             this.ComboBoxDogru.Name = "ComboBoxDogru";
             this.ComboBoxDogru.Size = new System.Drawing.Size(121, 21);
             this.ComboBoxDogru.TabIndex = 31;
@@ -291,10 +292,18 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(405, 265);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 32;
+            // 
             // SoruEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ComboBoxDogru);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label11);
@@ -323,6 +332,7 @@
             this.Controls.Add(this.label1);
             this.Name = "SoruEkle";
             this.Size = new System.Drawing.Size(740, 360);
+            this.Load += new System.EventHandler(this.SoruEkle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -358,5 +368,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ComboBox ComboBoxDogru;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -49,5 +49,10 @@ namespace SinavSis
             this.Close();
             Application.Exit();
         }
+
+        private void soruEkle1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

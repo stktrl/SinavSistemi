@@ -77,6 +77,7 @@ namespace SinavSis
             Sinavform f3 = new Sinavform();
             f3.Show();
             this.Hide();
+
             
         }
     }

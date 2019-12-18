@@ -63,7 +63,7 @@ namespace SinavSis
         private void button6_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into tbl_Soru(Ders,SoruID,Soru,Resim,ASıkkı,BSıkkı,CSıkkı,DSıkkı,DogruSık) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", baglanti);
+            SqlCommand komut = new SqlCommand("insert into tbl_Soru(Ders,SoruID,Soru,Resim,ASıkkı,BSıkkı,CSıkkı,DSıkkı,DogruCevap) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", baglanti);
             komut.Parameters.AddWithValue("@p1", TextBoxDers.Text);
             komut.Parameters.AddWithValue("@p2", textBoxID.Text);
             komut.Parameters.AddWithValue("@p3", TextBoxSoru.Text);
@@ -72,12 +72,15 @@ namespace SinavSis
             komut.Parameters.AddWithValue("@p6", textBox2sık.Text);
             komut.Parameters.AddWithValue("@p7", textBox3sık.Text);
             komut.Parameters.AddWithValue("@p8", textBox4sık.Text);
-            komut.Parameters.AddWithValue("@p9", ComboBoxDogru.Text);
+            komut.Parameters.AddWithValue("@p9", textBox1.Text);
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Kayıt Yapıldı");
         }
 
-        
+        private void SoruEkle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

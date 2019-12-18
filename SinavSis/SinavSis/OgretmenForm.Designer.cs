@@ -183,8 +183,9 @@
             // 
             this.soruEkle1.Location = new System.Drawing.Point(183, 42);
             this.soruEkle1.Name = "soruEkle1";
-            this.soruEkle1.Size = new System.Drawing.Size(731, 488);
+            this.soruEkle1.Size = new System.Drawing.Size(731, 375);
             this.soruEkle1.TabIndex = 3;
+            this.soruEkle1.Load += new System.EventHandler(this.soruEkle1_Load);
             // 
             // OgretmenForm
             // 
