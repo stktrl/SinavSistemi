@@ -63,9 +63,8 @@ namespace SinavSis
         private void button6_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into tbl_Soru(Ders,SoruID,Soru,Resim,ASıkkı,BSıkkı,CSıkkı,DSıkkı,DogruCevap) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", baglanti);
-            komut.Parameters.AddWithValue("@p1", TextBoxDers.Text);
-            komut.Parameters.AddWithValue("@p2", textBoxID.Text);
+            SqlCommand komut = new SqlCommand("insert into tbl_Soru(Ders,Soru,Resim,ASıkkı,BSıkkı,CSıkkı,DSıkkı,DogruCevap) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", baglanti);
+            komut.Parameters.AddWithValue("@p1", TextBoxDers.Text);           
             komut.Parameters.AddWithValue("@p3", TextBoxSoru.Text);
             komut.Parameters.AddWithValue("@p4", TextBoxResim.Text);
             komut.Parameters.AddWithValue("@p5", textBox1sık.Text);

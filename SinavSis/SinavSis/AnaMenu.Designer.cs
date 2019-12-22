@@ -92,7 +92,6 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(373, 257);
             this.panelControl1.TabIndex = 2;
-           
             // 
             // label2
             // 
@@ -172,7 +171,6 @@
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(378, 256);
             this.panelControl2.TabIndex = 5;
-            
             // 
             // label1
             // 
@@ -262,7 +260,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "Öğretmen Girişi";
             this.button3.UseVisualStyleBackColor = true;
-            
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // labelControl10
             // 

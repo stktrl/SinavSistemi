@@ -41,8 +41,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.labeldakika = new System.Windows.Forms.Label();
+            this.labelsaniye = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,6 +106,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(281, 66);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(231, 136);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -111,11 +114,11 @@
             // 
             this.progressBar1.ForeColor = System.Drawing.Color.HotPink;
             this.progressBar1.Location = new System.Drawing.Point(3, 1);
-            this.progressBar1.Maximum = 15;
+            this.progressBar1.Maximum = 3600;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(796, 10);
             this.progressBar1.TabIndex = 13;
-            this.progressBar1.Value = 15;
+            this.progressBar1.Value = 3600;
             // 
             // label3
             // 
@@ -165,19 +168,37 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(736, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "label2";
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // labeldakika
+            // 
+            this.labeldakika.AutoSize = true;
+            this.labeldakika.Location = new System.Drawing.Point(690, 24);
+            this.labeldakika.Name = "labeldakika";
+            this.labeldakika.Size = new System.Drawing.Size(13, 13);
+            this.labeldakika.TabIndex = 19;
+            this.labeldakika.Text = "--";
+            // 
+            // labelsaniye
+            // 
+            this.labelsaniye.AutoSize = true;
+            this.labelsaniye.Location = new System.Drawing.Point(725, 24);
+            this.labelsaniye.Name = "labelsaniye";
+            this.labelsaniye.Size = new System.Drawing.Size(13, 13);
+            this.labelsaniye.TabIndex = 20;
+            this.labelsaniye.Text = "--";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(709, 24);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(10, 13);
+            this.label5.TabIndex = 21;
+            this.label5.Text = ":";
             // 
             // Sinavform
             // 
@@ -185,7 +206,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 490);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelsaniye);
+            this.Controls.Add(this.labeldakika);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -221,7 +244,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label labeldakika;
+        private System.Windows.Forms.Label labelsaniye;
+        private System.Windows.Forms.Label label5;
     }
 }

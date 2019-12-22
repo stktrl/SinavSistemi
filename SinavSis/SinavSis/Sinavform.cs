@@ -29,7 +29,7 @@ namespace SinavSis
         {
             sayac++;
             label3.Text = sayac.ToString();
-            sayactimer += progressBar1.Maximum - progressBar1.Value + 1;
+            
 
             if (radioButton1.Checked)
             {
@@ -60,29 +60,36 @@ namespace SinavSis
         {
             sayac++;
             label3.Text = sayac.ToString();
-            sayactimer += progressBar1.Maximum - progressBar1.Value ;
+            
         }
-        
-        int sayactimer = 15;
+
+        int dakika = 60;
+        int saniye = 60;
+        int sayactimer=3600;
         private void timer1_Tick(object sender, EventArgs e)
         {
+            sayactimer -= 1;
+            saniye -= 1;
+            labelsaniye.Text = saniye.ToString();
+            labeldakika.Text = (dakika - 1).ToString();
+            if (saniye == 0)
+            {
+                dakika = dakika - 1;
+                labeldakika.Text = dakika.ToString();
+                saniye = 60;
+            }
+            if (labeldakika.Text=="-1" || sayactimer == 0)
+            {
+                timer1.Stop();
+                labeldakika.Text = "00";
+                labelsaniye.Text = "00";
+                MessageBox.Show("Süreniz BİTTİ. Anamenüye yönlendiriliyorsunuz.");
+                button3.PerformClick();
 
-           
-                sayactimer--;
-                progressBar1.Value = sayactimer;
-                label2.Text = progressBar1.Value.ToString();
-          
 
-                if (sayactimer == 0)
-                {
-                    timer1.Stop();
-                    MessageBox.Show("Süre Doldu.");
-                    sayactimer += 15;
-                    button1.PerformClick();
-                    progressBar1.Value = sayactimer;
-                    label2.Text = progressBar1.Value.ToString();
-                    timer1.Start();
-                }           
+            }
+            progressBar1.Value = sayactimer;             
+                         
         }
         string Dogrusık = "";
         private void Sinavform_Load(object sender, EventArgs e)
@@ -92,7 +99,7 @@ namespace SinavSis
             
             SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-J148P14;Initial Catalog=Sinav;Integrated Security=True");
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("Select TOP 5 Soru,ASıkkı,BSıkkı,CSıkkı,DSıkkı,DogruCevap from tbl_Soru order by newid()", baglanti);
+            SqlCommand komut = new SqlCommand("Select TOP 5 Soru,ASıkkı,BSıkkı,CSıkkı,DSıkkı,DogruCevap,Resim from tbl_Soru order by newid()", baglanti);
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
             {
@@ -104,6 +111,7 @@ namespace SinavSis
                 radioButton3.Text = dr["CSıkkı"].ToString();
                 radioButton4.Text = dr["DSıkkı"].ToString();
                 Dogrusık = dr["DogruCevap"].ToString();
+                pictureBox1.ImageLocation = dr["Resim"].ToString();
 
 
             }
@@ -118,6 +126,6 @@ namespace SinavSis
 
         }
 
-       
+      
     }
 }
